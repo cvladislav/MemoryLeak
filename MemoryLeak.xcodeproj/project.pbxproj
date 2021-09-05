@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		CE34A11A26E4CF0100BEEC70 /* MemorySwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34A11826E4CF0100BEEC70 /* MemorySwizzle.m */; };
 		CE34A11B26E4CF0100BEEC70 /* MemorySwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = CE34A11926E4CF0100BEEC70 /* MemorySwizzle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CE61A2F026DD701700D9CC1C /* MemoryLeak2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE61A2E526DD701700D9CC1C /* MemoryLeak2.framework */; };
-		CE61A2F526DD701800D9CC1C /* MemoryLeak2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE61A2F426DD701800D9CC1C /* MemoryLeak2Tests.m */; };
-		CE61A2F626DD701800D9CC1C /* MemoryLeak2.h in Headers */ = {isa = PBXBuildFile; fileRef = CE61A2E826DD701700D9CC1C /* MemoryLeak2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE61A2F026DD701700D9CC1C /* MemoryLeak.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE61A2E526DD701700D9CC1C /* MemoryLeak.framework */; };
+		CE61A2F526DD701800D9CC1C /* MemoryLeakTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE61A2F426DD701800D9CC1C /* MemoryLeakTests.m */; };
+		CE61A2F626DD701800D9CC1C /* MemoryLeak.h in Headers */ = {isa = PBXBuildFile; fileRef = CE61A2E826DD701700D9CC1C /* MemoryLeak.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,10 +27,10 @@
 /* Begin PBXFileReference section */
 		CE34A11826E4CF0100BEEC70 /* MemorySwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemorySwizzle.m; sourceTree = "<group>"; };
 		CE34A11926E4CF0100BEEC70 /* MemorySwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemorySwizzle.h; sourceTree = "<group>"; };
-		CE61A2E526DD701700D9CC1C /* MemoryLeak2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MemoryLeak2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE61A2E826DD701700D9CC1C /* MemoryLeak2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryLeak2.h; sourceTree = "<group>"; };
-		CE61A2EF26DD701700D9CC1C /* MemoryLeak2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoryLeak2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE61A2F426DD701800D9CC1C /* MemoryLeak2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryLeak2Tests.m; sourceTree = "<group>"; };
+		CE61A2E526DD701700D9CC1C /* MemoryLeak.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MemoryLeak.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE61A2E826DD701700D9CC1C /* MemoryLeak.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryLeak.h; sourceTree = "<group>"; };
+		CE61A2EF26DD701700D9CC1C /* MemoryLeakTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoryLeakTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE61A2F426DD701800D9CC1C /* MemoryLeakTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryLeakTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE61A2F026DD701700D9CC1C /* MemoryLeak2.framework in Frameworks */,
+				CE61A2F026DD701700D9CC1C /* MemoryLeak.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,8 +55,8 @@
 		CE61A2DB26DD701700D9CC1C = {
 			isa = PBXGroup;
 			children = (
-				CE61A2E726DD701700D9CC1C /* MemoryLeak2 */,
-				CE61A2F326DD701700D9CC1C /* MemoryLeak2Tests */,
+				CE61A2E726DD701700D9CC1C /* MemoryLeak */,
+				CE61A2F326DD701700D9CC1C /* MemoryLeakTests */,
 				CE61A2E626DD701700D9CC1C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,28 +64,28 @@
 		CE61A2E626DD701700D9CC1C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE61A2E526DD701700D9CC1C /* MemoryLeak2.framework */,
-				CE61A2EF26DD701700D9CC1C /* MemoryLeak2Tests.xctest */,
+				CE61A2E526DD701700D9CC1C /* MemoryLeak.framework */,
+				CE61A2EF26DD701700D9CC1C /* MemoryLeakTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CE61A2E726DD701700D9CC1C /* MemoryLeak2 */ = {
+		CE61A2E726DD701700D9CC1C /* MemoryLeak */ = {
 			isa = PBXGroup;
 			children = (
 				CE34A11926E4CF0100BEEC70 /* MemorySwizzle.h */,
 				CE34A11826E4CF0100BEEC70 /* MemorySwizzle.m */,
-				CE61A2E826DD701700D9CC1C /* MemoryLeak2.h */,
+				CE61A2E826DD701700D9CC1C /* MemoryLeak.h */,
 			);
-			path = MemoryLeak2;
+			path = MemoryLeak;
 			sourceTree = "<group>";
 		};
-		CE61A2F326DD701700D9CC1C /* MemoryLeak2Tests */ = {
+		CE61A2F326DD701700D9CC1C /* MemoryLeakTests */ = {
 			isa = PBXGroup;
 			children = (
-				CE61A2F426DD701800D9CC1C /* MemoryLeak2Tests.m */,
+				CE61A2F426DD701800D9CC1C /* MemoryLeakTests.m */,
 			);
-			path = MemoryLeak2Tests;
+			path = MemoryLeakTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,7 +95,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE61A2F626DD701800D9CC1C /* MemoryLeak2.h in Headers */,
+				CE61A2F626DD701800D9CC1C /* MemoryLeak.h in Headers */,
 				CE34A11B26E4CF0100BEEC70 /* MemorySwizzle.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,9 +103,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		CE61A2E426DD701700D9CC1C /* MemoryLeak2 */ = {
+		CE61A2E426DD701700D9CC1C /* MemoryLeak */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE61A2F926DD701800D9CC1C /* Build configuration list for PBXNativeTarget "MemoryLeak2" */;
+			buildConfigurationList = CE61A2F926DD701800D9CC1C /* Build configuration list for PBXNativeTarget "MemoryLeak" */;
 			buildPhases = (
 				CE61A2E026DD701700D9CC1C /* Headers */,
 				CE61A2E126DD701700D9CC1C /* Sources */,
@@ -116,14 +116,14 @@
 			);
 			dependencies = (
 			);
-			name = MemoryLeak2;
+			name = MemoryLeak;
 			productName = MemoryLeak2;
-			productReference = CE61A2E526DD701700D9CC1C /* MemoryLeak2.framework */;
+			productReference = CE61A2E526DD701700D9CC1C /* MemoryLeak.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CE61A2EE26DD701700D9CC1C /* MemoryLeak2Tests */ = {
+		CE61A2EE26DD701700D9CC1C /* MemoryLeakTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE61A2FC26DD701800D9CC1C /* Build configuration list for PBXNativeTarget "MemoryLeak2Tests" */;
+			buildConfigurationList = CE61A2FC26DD701800D9CC1C /* Build configuration list for PBXNativeTarget "MemoryLeakTests" */;
 			buildPhases = (
 				CE61A2EB26DD701700D9CC1C /* Sources */,
 				CE61A2EC26DD701700D9CC1C /* Frameworks */,
@@ -134,9 +134,9 @@
 			dependencies = (
 				CE61A2F226DD701700D9CC1C /* PBXTargetDependency */,
 			);
-			name = MemoryLeak2Tests;
+			name = MemoryLeakTests;
 			productName = MemoryLeak2Tests;
-			productReference = CE61A2EF26DD701700D9CC1C /* MemoryLeak2Tests.xctest */;
+			productReference = CE61A2EF26DD701700D9CC1C /* MemoryLeakTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -156,7 +156,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CE61A2DF26DD701700D9CC1C /* Build configuration list for PBXProject "MemoryLeak2" */;
+			buildConfigurationList = CE61A2DF26DD701700D9CC1C /* Build configuration list for PBXProject "MemoryLeak" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -169,8 +169,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CE61A2E426DD701700D9CC1C /* MemoryLeak2 */,
-				CE61A2EE26DD701700D9CC1C /* MemoryLeak2Tests */,
+				CE61A2E426DD701700D9CC1C /* MemoryLeak */,
+				CE61A2EE26DD701700D9CC1C /* MemoryLeakTests */,
 			);
 		};
 /* End PBXProject section */
@@ -205,7 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE61A2F526DD701800D9CC1C /* MemoryLeak2Tests.m in Sources */,
+				CE61A2F526DD701800D9CC1C /* MemoryLeakTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +214,7 @@
 /* Begin PBXTargetDependency section */
 		CE61A2F226DD701700D9CC1C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CE61A2E426DD701700D9CC1C /* MemoryLeak2 */;
+			target = CE61A2E426DD701700D9CC1C /* MemoryLeak */;
 			targetProxy = CE61A2F126DD701700D9CC1C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -272,7 +272,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -328,7 +328,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -348,6 +348,9 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleExecutable = MemoryLeak;
+				INFOPLIST_KEY_CFBundleName = MemoryLeak;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -356,7 +359,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Ciklum.MemoryLeak2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ciklum.MemoryLeak;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -374,6 +377,9 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleExecutable = MemoryLeak;
+				INFOPLIST_KEY_CFBundleName = MemoryLeak;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -382,7 +388,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Ciklum.MemoryLeak2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ciklum.MemoryLeak;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -431,7 +437,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CE61A2DF26DD701700D9CC1C /* Build configuration list for PBXProject "MemoryLeak2" */ = {
+		CE61A2DF26DD701700D9CC1C /* Build configuration list for PBXProject "MemoryLeak" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE61A2F726DD701800D9CC1C /* Debug */,
@@ -440,7 +446,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE61A2F926DD701800D9CC1C /* Build configuration list for PBXNativeTarget "MemoryLeak2" */ = {
+		CE61A2F926DD701800D9CC1C /* Build configuration list for PBXNativeTarget "MemoryLeak" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE61A2FA26DD701800D9CC1C /* Debug */,
@@ -449,7 +455,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE61A2FC26DD701800D9CC1C /* Build configuration list for PBXNativeTarget "MemoryLeak2Tests" */ = {
+		CE61A2FC26DD701800D9CC1C /* Build configuration list for PBXNativeTarget "MemoryLeakTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE61A2FD26DD701800D9CC1C /* Debug */,

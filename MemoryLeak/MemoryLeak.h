@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-#import <MemoryLeak2/MemorySwizzle.h>
+#import <MemoryLeak/MemorySwizzle.h>
 
 //! Project version number for MemoryLeak2.
 FOUNDATION_EXPORT double MemoryLeak2VersionNumber;

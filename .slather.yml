@@ -1,0 +1,6 @@
+coverage_service: cobertura_xml
+xcodeproj: MemoryLeak.xcodeproj
+scheme: MemoryLeak
+output_directory: reports
+ignore:
+  - MemoryLeakTests/*
